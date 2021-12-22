@@ -34,7 +34,7 @@ struct ContentView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .foregroundColor(.secondary)
         }
-        .padding(/*@START_MENU_TOKEN@*/.all, 20.0/*@END_MENU_TOKEN@*/)
+        .padding(.all, 20.0)
         .padding(.vertical, 20)
         .frame(height: 350.0)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
