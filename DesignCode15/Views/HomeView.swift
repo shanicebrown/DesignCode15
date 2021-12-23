@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  DesignCode15
 //
-//  Created by Shanice Brown on 12/11/21.
+//  Created by Shanice Brown on 12/23/21.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
             Spacer()
@@ -52,16 +52,11 @@ struct ContentView: View {
                 .frame(height: 230)
                 .offset(x: 32, y: -80)
         )
-        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ContentView()
-            ContentView()
-                .preferredColorScheme(.dark)
-        }
+        HomeView()
     }
 }

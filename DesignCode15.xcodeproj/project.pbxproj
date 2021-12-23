@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7151493277506FD00FB610A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7151492277506FD00FB610A /* HomeView.swift */; };
+		F72F695827741FCE00DEAAC2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F695727741FCD00DEAAC2 /* Tab.swift */; };
 		F72FC1812772CD5A0059535C /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72FC1802772CD5A0059535C /* TabBarView.swift */; };
 		F74CCFB427715C0F00CCB7EB /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CCFB327715C0F00CCB7EB /* BlobView.swift */; };
 		F75AA5E82766534900A011F2 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75AA5E72766534800A011F2 /* HexagonView.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7151492277506FD00FB610A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F72F695727741FCD00DEAAC2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		F72FC1802772CD5A0059535C /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F74CCFB327715C0F00CCB7EB /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 		F75AA5E72766534800A011F2 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
@@ -81,6 +85,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F71514942775095400FB610A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F72FC1802772CD5A0059535C /* TabBarView.swift */,
+				F7C50C6E276501BA00834096 /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F71514952775097800FB610A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7151492277506FD00FB610A /* HomeView.swift */,
+				F7C50C982765339100834096 /* AccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7151496277509A000FB610A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F75AA5E72766534800A011F2 /* HexagonView.swift */,
+				F74CCFB327715C0F00CCB7EB /* BlobView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F7151497277509D500FB610A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F72F695727741FCD00DEAAC2 /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F715149827750A0300FB610A /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F7C50C9627652A4600834096 /* Styles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		F7C50C60276501BA00834096 = {
 			isa = PBXGroup;
 			children = (
@@ -105,12 +152,11 @@
 			isa = PBXGroup;
 			children = (
 				F7C50C6C276501BA00834096 /* DesignCode15App.swift */,
-				F7C50C6E276501BA00834096 /* ContentView.swift */,
-				F72FC1802772CD5A0059535C /* TabBarView.swift */,
-				F7C50C982765339100834096 /* AccountView.swift */,
-				F74CCFB327715C0F00CCB7EB /* BlobView.swift */,
-				F75AA5E72766534800A011F2 /* HexagonView.swift */,
-				F7C50C9627652A4600834096 /* Styles.swift */,
+				F71514942775095400FB610A /* Navigation */,
+				F71514952775097800FB610A /* Views */,
+				F7151496277509A000FB610A /* Components */,
+				F7151497277509D500FB610A /* Model */,
+				F715149827750A0300FB610A /* Styles */,
 				F7C50C70276501BF00834096 /* Assets.xcassets */,
 				F7C50C72276501BF00834096 /* Preview Content */,
 			);
@@ -272,9 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7151493277506FD00FB610A /* HomeView.swift in Sources */,
 				F7C50C992765339100834096 /* AccountView.swift in Sources */,
 				F72FC1812772CD5A0059535C /* TabBarView.swift in Sources */,
 				F75AA5E82766534900A011F2 /* HexagonView.swift in Sources */,
+				F72F695827741FCE00DEAAC2 /* Tab.swift in Sources */,
 				F7C50C9727652A4600834096 /* Styles.swift in Sources */,
 				F7C50C6F276501BA00834096 /* ContentView.swift in Sources */,
 				F7C50C6D276501BA00834096 /* DesignCode15App.swift in Sources */,
