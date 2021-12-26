@@ -9,11 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("selectedTab") var selectedTab: Tab = .home
+    
     var body: some View {
-       
         ZStack(alignment: .bottom) {
             
-            Group {
                 switch selectedTab {
                 case .home:
                     ContentView()
@@ -24,10 +23,12 @@ struct ContentView: View {
                 case .library:
                     AccountView()
                 }
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+
             
          TabBarView()
+        }
+        .safeAreaInset(edge: .bottom) {
+            Color.clear.frame(height: 44)
         }
     }
 }
